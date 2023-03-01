@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+html{
+    background-color: #e2dbd1;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+p{
+    font-size: 0.9em;
+    letter-spacing: 2px;
+}
+header{
+    margin-top: -20px;
+    width: 80%;
+    display: grid;
+    grid-template-areas: 
+    "profil profil"
+    "intro intro"
+    "story skill"
+    "edu ach";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 50px 27px;
+    padding: 50px;
+}
+.profile-img {
+    margin-top: 20px;
+    background-image: url(pp.jpeg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    grid-area: profil ;
+    justify-self: center;
+    border: 2px solid #d8b9ab;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
+}
+.panel-intro{
+    margin-top: -20px;
+    margin-bottom: 20px;
+    grid-area: intro;
+    justify-self: center;
+    color: #38261b;
+    text-align: center;
+}
+.panel-intro .intro1{
+    font-size: 2.5em;
+}
+.panel-intro .intro2{
+    font-size: 1.5em;
+}
+.story {
+    grid-area: story;
+   
+}
+.story , .achieve{
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+    background-color: #d8b9ab;
+    border-radius: 8px;
+    
+}
+.skill, .education{
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+    background-color: #a67b6a;
+    color: whitesmoke;
+    border-radius: 8px;
+}
+.skill{
+    grid-area: skill;
+}
+.education{
+    grid-area: edu;
+}
+.achieve{
+    justify-content: center;
+    grid-area: ach;
+}
